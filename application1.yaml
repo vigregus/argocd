@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
     #username: vigregus
     #password: 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
-    path: dev
+    path: LT
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
