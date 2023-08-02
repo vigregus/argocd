@@ -18,7 +18,7 @@ pipeline {
     }
 
     environment {
-        registry = "learnwithabhi/vproappdock"
+        registry = "vigregus/jenkins"
         registryCredential = 'dockerhub'
     }
 
@@ -27,11 +27,11 @@ pipeline {
         stage('BUILD'){
             steps {
 		script {
-		    sh 'ifconfig' 
+		    sh 'pwd'
 		    echo '))))_________))))))'	
 		}
 		
-		sh 'ifconfig'    
+		   
                 sh 'mvn clean install -DskipTests'
             }
             post {
