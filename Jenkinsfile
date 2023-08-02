@@ -5,7 +5,11 @@ def COLOR_MAP = [
 
 pipeline {
 
-    agent master
+    agent {
+	    node {
+		 label 'master'
+	    }
+    }
 
 	tools {
             jdk 'OracleJDK11'
