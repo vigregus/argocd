@@ -32,8 +32,9 @@ pipeline {
 		    echo '))))_________))))))'	
 		}
 		
-		sh 'export JAVA_HOME=/opt/java/openjdk/bin/java'   
-                sh 'mvn clean install -DskipTests'
+		sh """
+  		export JAVA_HOME=/opt/java/openjdk/bin/java   
+                mvn clean install -DskipTests"""
             }
             post {
                 success {
