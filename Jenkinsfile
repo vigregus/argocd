@@ -27,11 +27,12 @@ pipeline {
         stage('BUILD'){
             steps {
 		script {
+			
 		    sh 'pwd'
 		    echo '))))_________))))))'	
 		}
 		
-		   
+		sh 'EXPORT JAVA_HOME=/opt/java/openjdk/bin/java'   
                 sh 'mvn clean install -DskipTests'
             }
             post {
