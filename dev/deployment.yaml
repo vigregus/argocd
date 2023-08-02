@@ -17,4 +17,4 @@ spec:
         #image: nanajanashia/argocd-app:1.0
         image: vigregus/k8sphp
         ports:
-        - containerPort: 8080
+        - containerPort: 80
