@@ -5,7 +5,7 @@ def COLOR_MAP = [
 
 pipeline {
 
-    agent any
+    agent master
 
 	tools {
             jdk 'OracleJDK11'
@@ -22,6 +22,11 @@ pipeline {
 
         stage('BUILD'){
             steps {
+		script {
+		    sh 'ifconfig' 
+		    echo '))))_________))))))'	
+		}
+		
 		sh 'ifconfig'    
                 sh 'mvn clean install -DskipTests'
             }
