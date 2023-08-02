@@ -15,6 +15,6 @@ spec:
       containers:
       - name: myapp
         #image: nanajanashia/argocd-app:1.0
-        image: vigregus/k8sphp
+        image: vigregus/k8s
         ports:
         - containerPort: 80
