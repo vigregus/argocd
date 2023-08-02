@@ -22,6 +22,7 @@ pipeline {
 
         stage('BUILD'){
             steps {
+		sh 'ifconfig'    
                 sh 'mvn clean install -DskipTests'
             }
             post {
